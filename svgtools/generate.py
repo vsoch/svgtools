@@ -3,9 +3,9 @@ generate.py
 part of svgtools package
 
 '''
-
+from svgtools.components import create_circle
+from svgtools.imutils import get_coordinates
 from svgtools.base import get_svg_base
-from svgtools.imgutils import get_coordinates
 from svgtools.utils import save_svg
 
 def create_pointilism_svg(png_image,uid_base="uid",transparent_filter=True,white_filter=True,
