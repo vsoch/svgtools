@@ -10,4 +10,4 @@ png_image = "data/body.png"
 
 create_pointilism_svg(png_image,uid_base="bodymap",
                                 sample_rate=8,width=330,height=800,
-                                output_file="data/bodymappp.svg")
+                                output_file="data/bodymap.svg")
