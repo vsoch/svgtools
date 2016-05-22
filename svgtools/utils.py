@@ -17,6 +17,15 @@ def save_svg(output_file,svg):
     filey.close()
 
 
+def save_json(json_obj,output_file):
+    '''save_json saves a json object to file
+    :param json_obj: json object
+    :param output_file: output json file
+    '''
+    filey = open(output_file,'wb')
+    filey.write(json.dumps(json_obj, sort_keys=True,indent=4, separators=(',', ': ')))
+    filey.close()
+    return output_file
 
 def read_json(json_file):
     '''read_json reads in a json structure, corresponding to different regions to annotate
